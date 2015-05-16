@@ -1,6 +1,6 @@
 ﻿define([
     "jquery",
-    "underscore",
+    "lodash",
     "./declare",
     "./_EventMixin",
     "./_StatefulMixin",
@@ -172,7 +172,7 @@
             });
         },
         destroy: function () {
-            //if(!this._destroyed){
+            if(!this._destroyed){
                 _Destroyable.prototype.destroy.apply(this,arguments);
                 this._detachTemplateNodes();
                 if (this.domNode) {
@@ -183,7 +183,7 @@
                 delete this.domNode;
                 delete this._attachPoints;
                 delete this._events;
-            //}
+            }
         }
     });
 

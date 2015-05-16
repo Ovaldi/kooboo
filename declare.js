@@ -69,6 +69,7 @@ define(function () {
 
         return ctor;
     };
+	
     declare.mixin = mixin;
 
     return declare;
