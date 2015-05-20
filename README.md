@@ -2,6 +2,7 @@
 
 #Example:
   templates/MyWidget.html
+  
     &lt;div&gt;
       &lt;h1 title="<%=title%>"&gt;&lt;/h1&gt;
       &lt;div data-kb-attach-point="contentNode"&gt;
