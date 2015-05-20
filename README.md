@@ -1,7 +1,7 @@
 一些组件化的基础类
 
 #Example:
-  templates/MyWidget.html
+  MyWidget.html
   
     <div>
       <h1 title="<%=title%>"></h1>
@@ -34,6 +34,8 @@
       });
     }
     
+  main.js
+  
     require([
       "kooboo/topic",
       "./MyWidget"
