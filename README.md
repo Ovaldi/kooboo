@@ -51,12 +51,13 @@
         .appendTo(document.body)
         .startup();
       
-      topic.subscribe("wgt:toggle", function(args){
+      topic.subscribe("wgt:toggle", function(data){
         wgt.toggle();
+        console.log(data);
       });
       
       ... ...
       ... ...
       
-      topic.publish("wgt:toggle");
+      topic.publish("wgt:toggle",{time: +new Date});
     });
