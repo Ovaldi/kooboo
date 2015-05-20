@@ -3,13 +3,13 @@
 #Example:
   templates/MyWidget.html
   
-    &lt;div&gt;
-      &lt;h1 title="<%=title%>"&gt;&lt;/h1&gt;
-      &lt;div data-kb-attach-point="contentNode"&gt;
+    <div>
+      <h1 title="<%=title%>"></h1>
+      <div data-kb-attach-point="contentNode">
         ...some text
-      &lt;/div&gt;
-      &lt;button data-kb-attach-event="click:_onToggleClick"&gt;Toggle&lt;/button&gt;
-    &lt;/div&gt;
+      </div>
+      <button data-kb-attach-event="click:_onToggleClick">Toggle</button>
+    </div>
 
   MyWidget.js
     define([
