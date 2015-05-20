@@ -12,6 +12,7 @@
     </div>
 
   MyWidget.js
+  
     define([
       "jquery",
       "kooboo/declare"
@@ -32,21 +33,21 @@
         }
       });
     }
-  
-  require([
-    "kooboo/topic",
-    "./MyWidget"
-  ], function(topic, MyWidget){
-    var wgt = new MyWidget({
-      title: "This is my widget"
-    }).appendTo(document.body).startup();
     
-    topic.subscribe("wgt:toggle", function(args){
-      wgt.toggle();
+    require([
+      "kooboo/topic",
+      "./MyWidget"
+    ], function(topic, MyWidget){
+      var wgt = new MyWidget({
+        title: "This is my widget"
+      }).appendTo(document.body).startup();
+      
+      topic.subscribe("wgt:toggle", function(args){
+        wgt.toggle();
+      });
+      
+      ... ...
+      ... ...
+      
+      topic.publish("wgt:toggle");
     });
-    
-    ... ...
-    ... ...
-    
-    topic.publish("wgt:toggle");
-  });
