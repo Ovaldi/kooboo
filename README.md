@@ -1,4 +1,4 @@
-一些组件化的基础类
+一些UI组件化相关的基础类
 
 #Example:
   MyWidget.html
