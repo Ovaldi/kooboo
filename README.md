@@ -21,6 +21,7 @@
     ], function($, declare, _WidgetBase, template){
       "use strict";
     
+      //you can also use _WidgetBase.extend({...})
       var MyWidget = declare(_WidgetBase, {
         templateString: template,
         title: null,
@@ -30,6 +31,7 @@
         },
         toggle: function(){
            $(this.contentNode).toggle();
+           return this;
         }
       });
     }
@@ -38,7 +40,8 @@
   
     require([
       "kooboo/topic",
-      "./MyWidget"
+      "./MyWidget",
+      "domReady!"
     ], function(topic, MyWidget){
       var wgt = new MyWidget({
         title: "This is my widget"
