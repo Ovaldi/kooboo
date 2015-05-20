@@ -4,11 +4,11 @@
   templates/MyWidget.html
     &lt;div&gt;
       &lt;h1 title="<%=title%>"&gt;&lt;/h1&gt;
-      <div data-kb-attach-point="contentNode">
+      &lt;div data-kb-attach-point="contentNode"&gt;
         ...some text
-      </div>
-      <button data-kb-attach-event="click:_onToggleClick">Toggle</button>
-    </div>
+      &lt;/div&gt;
+      &lt;button data-kb-attach-event="click:_onToggleClick"&gt;Toggle&lt;/button&gt;
+    &lt;/div&gt;
 
   MyWidget.js
     define([
