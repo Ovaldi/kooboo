@@ -43,9 +43,13 @@
       "./MyWidget",
       "domReady!"
     ], function(topic, MyWidget){
+      "use strict";
+    
       var wgt = new MyWidget({
         title: "This is my widget"
-      }).appendTo(document.body).startup();
+      }/*, "#selector"*/)
+        .appendTo(document.body)
+        .startup();
       
       topic.subscribe("wgt:toggle", function(args){
         wgt.toggle();
