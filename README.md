@@ -2,7 +2,7 @@
 
 #Example:
   templates/MyWidget.html
-    <div>
+    &lt;div&gt;
       <h1 title="<%=title%>"></h1>
       <div data-kb-attach-point="contentNode">
         ...some text
