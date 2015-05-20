@@ -3,7 +3,7 @@
 #Example:
   templates/MyWidget.html
     &lt;div&gt;
-      <h1 title="<%=title%>"></h1>
+      &lt;h1 title="<%=title%>"&gt;&lt;/h1&gt;
       <div data-kb-attach-point="contentNode">
         ...some text
       </div>
