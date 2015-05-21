@@ -1,4 +1,5 @@
 define(function () {
+    "use strict";
     
     var ap = Array.prototype, splice = ap.splice, slice = ap.slice;
 
