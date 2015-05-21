@@ -1,4 +1,6 @@
 define(["has"],function(has){
+    "use strict";
+    
     var n = navigator,
         dua = n.userAgent;
 
