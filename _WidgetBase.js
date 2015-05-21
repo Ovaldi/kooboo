@@ -8,6 +8,8 @@
     "./parser",
     "./_Destroyable"
 ], function ($, _, declare, _EventMixin, _StatefulMixin,registry, parser, _Destroyable) {
+    "use strict";
+    
     var attachPointAttr = "data-kb-attach-point",
         attachEventAttr = "data-kb-attach-event";
 
