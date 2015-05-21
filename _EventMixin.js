@@ -5,7 +5,6 @@ define(function () {
 
     var _EventMixin = {
         on: function (evName, fn, scope) {
-            //TODO:同时绑定多个事件，如"click mouseover mouseout"
             var self = this, _events = this._events || (this._events = {}), listeners = _events[evName] || (_events[evName] = []);
             listeners.push(fn);
 
