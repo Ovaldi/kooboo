@@ -1,6 +1,7 @@
 define([
     "./_EventMixin"
 ], function (_EventMixin) {
+    "use strict";
 
     var topic = {
         publish: function (topic, data) {
