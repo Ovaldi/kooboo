@@ -1,4 +1,16 @@
-define(function () {
+(function(factory){
+    if(typeof define === 'function' && define.amd){
+        define(factory);
+    }
+    else if(typeof module === 'object' && typeof exports === 'object'){
+        module.exports = factory();
+    }
+    else{
+        factory();
+    }
+})(function (){
+    "use strict";
+
     var xtor = function () {
     };
 
@@ -9,7 +21,7 @@ define(function () {
         return t;
     }
 
-    function mixin(/*Object*/dest,/*Object*/ mixins) {
+    function mixin(/*Object*/dest, /*Object*/ mixins) {
         for (var p in mixins) {
             if(mixins.hasOwnProperty(p)) {
                 dest[p] = mixins[p];
@@ -69,7 +81,7 @@ define(function () {
 
         return ctor;
     };
-	
+
     declare.mixin = mixin;
 
     return declare;
