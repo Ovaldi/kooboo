@@ -1,6 +1,7 @@
 define([
-    "underscore"
+    "lodash"
 ], function (_) {
+    "use strict";
     
     var rdashAlpha = /([a-z])/i;
 
