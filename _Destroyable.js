@@ -2,6 +2,8 @@ define([
     "./declare",
     "underscore"
 ], function (declare, _) {
+    "use strict";
+    
     var ap = Array.prototype,slice = ap.slice;
     return declare(null, {
         init: function () {
