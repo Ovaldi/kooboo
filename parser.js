@@ -1,8 +1,10 @@
 define([
-    "underscore",
+    "lodash",
     "jquery",
     "require"
 ], function (_, $,require) {
+    "use strict";
+    
     var typeAttr = "data-kb-type",
         attachPointAttr = "data-kb-attach-point",
         paramsAttr = "data-kb-params";
