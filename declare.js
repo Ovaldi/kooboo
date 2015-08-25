@@ -1,4 +1,4 @@
-(function(factory){
+(function(factory, global){
     if(typeof define === 'function' && define.amd){
         define(factory);
     }
@@ -6,10 +6,9 @@
         module.exports = factory();
     }
     else{
-        factory();
+        global.declare = factory();
     }
 })(function (){
-    "use strict";
 
     var xtor = function () {
     };
@@ -44,8 +43,7 @@
     }
 
     function extend(members){
-        var ctor = this.__proto__.constructor;
-        return declare(ctor,members);
+        return declare(this, members);
     }
 
     function inherited(params) {
@@ -85,4 +83,4 @@
     declare.mixin = mixin;
 
     return declare;
-});
+}, this);
